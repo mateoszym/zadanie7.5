@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+	margin: 0 auto;
+	font-family: 'open sans';
+	}
+
+header {
+	background-color: #313234;
+	min-height: 50px;
+	overflow: hidden;
+	}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	}
+ 
+nav img {
+ 	padding: 10px 0;
+ 	}
+ 
+header> nav> ul {
+ 	margin: 0 auto;
+ 	padding: 0;
+ 	list-style-type: none;
+ 	float: right;
+ 	}
+ 	
+header nav ul li {
+	display: inline-block;
+	}
+ 
+header> nav> ul> li> a {
+ 	line-height: 50px;
+ 	padding: 0 20px;
+ 	color: white;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ }
+ 
+header> nav> ul> li> a:hover {
+ 	color: #00c0e5;
+ 	}
+ 
+.hero {
+ 	background: url(https://images.unsplash.com/1/apple-gear-looking-pretty.jpg) 0/cover;
+ 	background-position: center;
+ 	width: 100%;
+ 	height: 100vh;
+ 	margin: 0 auto; 
+ 	}
+ 
+ .hero > .slogan {
+ 	float: right;
+ 	max-width: 800px;
+ 	font-size: 30px;
+ 	padding: 0 150px;
+ 	margin: 0;
+ 	color: white;
+ 	background-color: rgba(0, 0, 0, 0.4);
+ 	text-align: center;
+ 	text-transform: uppercase;
+   	top: 200px;
+   	position: relative;
+   	}
+
+.row:after , .row:before {
+ 	display: table;
+ 	content: ""; 
+ 	clear: both;
+ 	}
+ 
+[class*="col-"] {
+ 	float: left;
+ 	min-height: 1px;
+ 	padding: 15px;
+ 	}
+ 	
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.col-offset-0 { margin-left: 0; }
+.col-offset-1 { margin-left: 8.33%; }
+.col-offset-2 { margin-left: 16.66%; }
+.col-offset-3 { margin-left: 25%; }
+.col-offset-4 { margin-left: 33.33%; }
+.col-offset-5 { margin-left: 41.66%; }
+.col-offset-6 { margin-left: 50%; }
+.col-offset-7 { margin-left: 58.33%; }
+.col-offset-8 { margin-left: 66.66%; }
+.col-offset-9 { margin-left: 75%; }
+.col-offset-10 { margin-left: 83.33%; }
+.col-offset-11 { margin-left: 91.66%; }
+.col-offset-12 { margin-left: 100%; }	
+
+section .container {
+	margin: 50px auto;
+	}
+
+.benefits {
+	text-align: center;
+	margin: 50px auto;
+	}
+
+.benefits .fa {
+	width: 120px;
+	height: 110px;
+	font-size: 80px;
+	line-height: 110px;
+	border-radius: 10px;
+	color: white;
+	background-color: #313332;
+	cursor: pointer;
+	}
+
+.benefits h2 {
+	background-color: white;
+	color: black;
+	}
+
+.benefits .icon:hover .fa {
+	background-color: #00c7e8;
+	color: white;
+	}
+
+.benefits .icon:hover .icon-title {
+	color: #00c7e8;
+	}
+
+.gallery .row > div {
+	position: relative;
+	padding: 0;
+	}
+
+.gallery img {
+	width: 100%;
+	height: 16.16vw;
+	display: block;
+	color: white;
+	}
+
+.gallery .layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	}
+
+.gallery .layer:hover { 
+	background-color: rgba(0,0,0, 0.5);
+	}
+
+.gallery .layer .icons {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+
+	}
+
+.gallery .icons .fa {
+	font-size: 15px;
+	border-radius: 6px 6px;
+	background-color: white;
+	padding: 15px 15px 15px 15px;
+	line-height: 0.3em;
+	}
+
+.gallery .icons {
+	display: inline-block;
+	color: #2c3230;
+	position: relative;
+	left: 0%;
+	opacity: 0;
+	}
+
+.gallery .layer:hover .icons {
+	display: inline-block;
+	color: #2c3230;
+	position: relative;
+	left: 0%;
+	opacity: 1;
+	}
+
+.people img {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	}
+
+.people .person {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  }
+
+.people .person .position {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  line-height: 200px;
+  font-size: 20px;
+  }
+
+.people .person .position:hover {
+  opacity: 1;
+  transition: 0.1s;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  }
+
+.people p {
+	font-size: 20px;
+	text-align: center;
+	}
+
+.tablet {
+	background-color: #797b7a;
+	width: 100%;
+	color: white;
+	}
+
+.tablet .tablet-photo img {
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	}
+
+.tablet .tablet-title h2 {
+	text-transform: uppercase;
+	font-size: 50px;	
+	margin-bottom: -15px;
+	font-family: 'Archivo Black';
+	}
+
+.tablet .tablet-info {
+	font-size: 20px;
+	}
+
+.numbers {
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+.numbers .number-info h2 {
+	font-family: 'Sonsie One';
+	font-size: 55px;
+	margin: 0;
+	}
+
+.numbers .number-info p {
+	margin-top: 0;
+	font-size: 20px;
+	color: #22c8f0;
+	font-family: 'open sans';
+	}
+
+.footer {
+	background-color: #313332;
+	color: white;
+	}
+
+.footer .row .row [class*="col-"] {
+	padding: 0;
+	}
+
+.footer h2:after {
+	content:'';
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 5px;
+	width: 90px;
+	height: 3px;
+	background-color: white;
+	}
+
+.footer .touch  h3 {
+	margin: 0;
+	}
+
+.footer p {
+	margin: 0;
+	}
+
+.footer .button {
+	width: 100%;
+	height: 100%;
+	padding-left: 0;	
+	}
+
+.footer .icon {
+	margin-top: 20px;
+	display: inline-block;
+	border: 1px;
+	width: 40px;
+	height: 40px;
+	color: white;
+	background-color: #02c7e9;
+	font-size: 20px;
+	line-height: 40px;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	}
+
+.footer .icon:hover {
+	background-color: #91D0E6;
+	}
+
+.footer .foot p {
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	background-color: #252726;
+	}
+
+@media (max-width: 767px){
+	
+	.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+	nav {
+		text-align: center;
+		display: block;
+	}
+		
+	nav img {
+		max-width: 70%;
+	}
+		
+	nav ul li  {
+		width: 100vw;
+		float: none;
+		height: auto;		
+	}
+	
+	nav ul li:hover{
+		background-color: #B8BDBF;
+		cursor: pointer;
+	}
+	
+	.hero {
+		height: 400px;
+	}
+	
+	.hero .slogan {
+		margin-top: -110px;
+		width: 100%;
+	}
+	
+	.gallery img {
+		object-fit: cover;
+		width: 100%;
+		height: 60vw;
+	}
+
+	.gallery .icons .fa {
+		border-radius:  4px 4px;
+		line-height: 0.15em;
+		font-size: 20px;
+	}
+
+	.gallery .layer:hover{
+		background: none;
+	}
+	
+	.gallery .layer .icons {
+		 opacity: 1;
+	}
+	
+	.people .person .position {
+  		font-size: 30px;
+  		opacity: 1;
+	}
+	
+	.people .person .position span {
+		color: white; 
+		text-shadow: black 0.1em 0.1em 0.2em; 
+	}
+	
+	.people .person .position:hover {
+		background: none;
+	}
+
+	.tablet {
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.tablet .tablet-photo {
+		padding: 0;
+	}
+
+	.tablet .tablet-photo img {
+		object-fit: cover;
+	}
+
+	.tablet .tablet-title h2 {
+		font-size: 30px;
+	}
+
+	.footer {
+		text-align: center;
+	}	
+	.footer h2:after {
+		content: none;
+	}
+
+	.footer .icon {
+		border: 1px;
+		width: 50px;
+		height: 50px;
+		font-size: 35px;
+		line-height: 50px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .gallery .layer:hover{
+		background: none;
+	}
+    .gallery .layer .icons {
+		 opacity: 1;
+	}
+	
+	.people .person .position:hover {
+		background: none;
+	}
+	
+	.people .person .position span {
+		font-size: 40px;
+		color: white; 
+		text-shadow: black 0.1em 0.1em 0.2em; 
+	}
+	
+	.people .person .position {
+  		opacity: 1;
+  	}
+ 
+	.tablet .tablet-photo img {
+		width: 100%;
+    	height: auto;
+    }
+
+	.tablet .tablet-title h2 {
+		font-size: 40px;
+	}
+
+	.fotter h2 {
+		font-size: 70%;
+	}
+
+	.footer h2:after {
+		content: none;
+	}
+
+	.footer h3 {
+		font-size: 80%;
+	}
+
+	.footer p {
+		font-size: 80%
+	}
+}
